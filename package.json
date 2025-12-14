@@ -1,0 +1,23 @@
+{
+  "name": "abc-studio-fitness",
+  "version": "1.0.0",
+  "description": "practice project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corbinreak/ABC-Studio-Fitness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corbinreak/ABC-Studio-Fitness/issues"
+  },
+  "homepage": "https://github.com/corbinreak/ABC-Studio-Fitness#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
