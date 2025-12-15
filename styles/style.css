@@ -33,8 +33,7 @@ a {
 }
 
 a:hover {
-    margin-left: 2px;
-    font-size: 1.1rem;
+    margin-left: 8px;
     color: #634e99;
 }
 
@@ -42,7 +41,7 @@ a:hover {
     Layout and Structure Styles (applies for all pages)
 */
 
-.header-container, footer-container, main {
+.header-container, .footer-container, main {
     max-width: 1200px;
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Add some horizontal padding */
@@ -93,10 +92,6 @@ footer {
 
 .footer-nav-social {
     margin-right: 25px;
-}
-
-.footer-nav a:hover {
-    cursor: pointer;
 }
 
 .footer-container {
