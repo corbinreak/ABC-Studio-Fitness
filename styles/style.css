@@ -170,13 +170,34 @@ footer {
     padding-bottom: 15px;
 }
 
+.subscribe button {
+    margin-top: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    background-color: var(--bootcamp-blue);
+    color: var(--willow-grey);
+    border: none;
+    padding: 10px 20px;
+}
+
+.subscribe button:hover {
+    background-color: var(--zen-grey);
+    color: var(--norish-navy);
+    border: 2px solid var(--norish-navy);
+}
+
+
+
 .copyright-bar {
     text-align: center;
     border-top: 1px solid var(--willow-grey);
     padding-top: 10px;
+    margin-top: 15px;
+    width: 100%;
+    display: block;
 }
 
-.copright-bar p {
+.copyright-bar p {
     margin: 0;
 }
 
