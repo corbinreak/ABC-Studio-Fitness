@@ -171,6 +171,32 @@ main img {
     border: 2px solid var(--norish-navy);
 }
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-section button {
+    margin-top: 10px;
+    border-radius: 18px;
+    cursor: pointer;
+    background-color: var(--bootcamp-blue);
+    color: var(--willow-grey);
+    border: none;
+    padding: 8px 16px;
+}
+
+.contact-form-section button:hover {
+    background-color: var(--zen-grey);
+    color: var(--norish-navy);
+    border: 2px solid var(--norish-navy);
+}
+
 .cart-item button {
     margin-top: 10px;
     border-radius: 18px;
