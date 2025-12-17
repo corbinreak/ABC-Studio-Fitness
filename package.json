@@ -1,24 +1,24 @@
 {
-  "name": "abc_studio_fitness_website",
+  "name": "abc-studio-fitness",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/corbinreak/ABC-Studio-Fitness#readme",
-  "bugs": {
-    "url": "https://github.com/corbinreak/ABC-Studio-Fitness/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/corbinreak/ABC-Studio-Fitness.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
+  "description": "practice project",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "live-server --port=3000 --open=/index.html",
     "start": "live-server --port=3000 --open=/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corbinreak/ABC-Studio-Fitness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corbinreak/ABC-Studio-Fitness/issues"
+  },
+  "homepage": "https://github.com/corbinreak/ABC-Studio-Fitness#readme",
   "devDependencies": {
     "live-server": "^1.2.2"
   }
