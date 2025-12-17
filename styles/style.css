@@ -9,14 +9,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --norish-navy: #001f3f;
+    --bootcamp-blue: #155ebc;
+    --zen-grey: #d3d3d3;
+    --willow-grey: #e0e0e0;
+}
+
 /* Remove default margin and padding from the body */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Calibri', 'Arial', sans-serif;
     line-height: 1.6;
-    color: #001f3f;
-    background-color: #d3d3d3;
+    color: var(--norish-navy);
+    background-color: var(--zen-grey);
 }
 
 /* Remove list styles for navigation */
@@ -28,13 +35,20 @@ ul {
 
 /* Base Link style */
 a {
-    color: #d3d3d3;
     text-decoration: none;
+    color: var(--norish-navy)
 }
 
+a::after {
+    color: var(--bootcamp-blue); 
+}
+
+
+
+
 a:hover {
-    margin-left: 8px;
-    color: #634e99;
+    margin: 8px;
+    color: var(--bootcamp-blue);
 }
 
 /* 
@@ -53,8 +67,9 @@ a:hover {
 */
 
 header {
-    background-color: #001f3f;
-    border-bottom: 1px solid #001f3f;
+    background-color: var(--norish-navy);
+    color: var(--willow-grey);
+    border-bottom: 1px solid var(--norish-navy);
     padding: 10px 0;
 }
 .header-container {
