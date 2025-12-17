@@ -84,16 +84,16 @@ header {
 
 .header-title a {
     text-decoration: none;
-    color: #d3d3d3;
+    color: var(--willow-grey);
 }
 
 /* Animation Styles */
 
 .header-title a:hover {
     text-decoration: none;
-    border: 2px solid #d3d3d3;
-    background-color: #d3d3d3;
-    color: #001f3f;
+    border: 2px solid var(--willow-grey);
+    background-color: var(--willow-grey);
+    color: var(--norish-navy);
     border-radius: 20px;
     padding: 5px 10px;
 }
@@ -114,16 +114,16 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #d3d3d3;
+    color: var(--willow-grey);
     padding: 10px;
 }
 
 /* Nav effects */
 nav ul li a:hover {
     text-decoration: underline;
-    border: 2px solid #d3d3d3;
-    background-color: #d3d3d3;
-    color: #001f3f;
+    border: 2px solid var(--willow-grey);
+    background-color: var(--willow-grey);
+    color: var(--norish-navy);
     border-radius: 20px;
     padding: 5px 10px;
 }
@@ -132,8 +132,8 @@ nav ul li a:hover {
 main {
     margin: 20px 150px 150px 20px;
     padding: 20px;
-    background-color: #d3d3d3;
-    color: #001f3f;
+    background-color: var(--zen-grey);
+    color: var(--norish-navy);
 }
 
 main img {
@@ -148,8 +148,8 @@ main img {
 */
 
 footer {
-    background-color: #001f3f;
-    color: #d3d3d3d3;
+    background-color: var(--norish-navy);
+    color: var(--willow-grey);
     padding: 20px 0;
     margin-top: 30px;
     font-size: 0.9rem;
@@ -172,7 +172,7 @@ footer {
 
 .copyright-bar {
     text-align: center;
-    border-top: 1px solid #d3d3d3d3;
+    border-top: 1px solid var(--willow-grey);
     padding-top: 10px;
 }
 
@@ -186,6 +186,6 @@ footer {
 
 .material-symbols-outlined {
     font-size: 24px;
-    color: #d3d3d3;
+    color: var(--willow-grey);
     margin-right: 10px;
 }
