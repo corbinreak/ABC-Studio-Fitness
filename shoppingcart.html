@@ -70,7 +70,7 @@
                     <p class="body-large">$100.00</p>
                 </div>
 
-                <button class="clear-cart-button" onClick="alert('Cart cleared')">Clear Cart</button>
+                <button class="clear-cart-button" onClick="clearCart()">Clear Cart</button>
                 
                 <button class="checkout-button" onClick="alert('Thank you for your order!')">Process Order</button>
             </section>
@@ -111,6 +111,17 @@
                 <p>&copy; 2024 ABC Studio Fitness. All rights reserved.</p>
             </div>
         </footer>
+        <script>
+            function clearCart() {
+                // get the current cart items 
+                let cart = JSON.parse(sessionStorage.getItem('abc_cart')) || [];
+                // clear the cart
+                cart = [];
+                // save the cleared cart back to session storage
+                sessionStorage.setItem('abc_cart', JSON.stringify(cart));
+                alert('Your cart has been cleared.');
+            }
+        </script>
 
     </body>
 </html>

@@ -39,17 +39,17 @@
                     <td>
                         <img src="./public/images/Client2_GroupYoga.png" alt="Individual Yoga Session" style="width:100%;">
                         <h4>Group Yoga Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                                    <button onClick="addToCart('Group Yoga Session')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_IndividualYoga.png" alt="Group Yoga Session" style="width:100%;">
                         <h4>Individual Yoga Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Individual Yoga Session')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_GroupPilates.png" alt="Individual Pilates Session" style="width:100%;">
                         <h4>Group Pilates Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Group Pilates Session')">Add to Cart</button>
                     </td>
                 </tr>
                 
@@ -57,17 +57,17 @@
                     <td>
                         <img src="./public/images/Client2_IndividualPilates.png" alt="Group Pilates Session" style="width:100%;">
                         <h4>Individual Pilates Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Individual Pilates Session')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_GroupKickboxing.png" alt="Individual Kickboxing Session" style="width:100%;">
                         <h4>Group Kickboxing Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Group Kickboxing Session')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_IndividualKickboxing.png" alt="Group Kickboxing Session" style="width:100%;">
                         <h4>Individual Kickboxing Session</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Individual Kickboxing Session')">Add to Cart</button>
                     </td>
                 </tr>
 
@@ -75,17 +75,17 @@
                     <td>
                         <img src="./public/images/Client2_YogaMat.png" alt="Yoga Mat" style="width:100%;">
                         <h4>Yoga Mat</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Yoga Mat')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_WaterBottle.png" alt="Water Bottle" style="width:100%;">
                         <h4>Water Bottle</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Water Bottle')">Add to Cart</button>
                     </td>
                     <td>
                         <img src="./public/images/Client2_TeeShirt.png" alt="Tee Shirt" style="width:100%;">
                         <h4>Tee Shirt</h4>
-                        <button onclick="alert('Item added to the cart.')">Add to Cart</button>
+                        <button onClick="addToCart('Tee Shirt')">Add to Cart</button>
                     </td>
                 </tr>
             </table>
@@ -127,6 +127,20 @@
                 <p>&copy; 2024 ABC Studio Fitness. All rights reserved.</p>
             </div>
         </footer>
+       <script>
+        // Function to add items to cart.
 
+        function addToCart(itemName) {
+        // Get the current cart from session storage, or create an empty array if it doesn't exist
+        let cart = JSON.parse(sessionStorage.getItem('abc_cart')) || [];
+        // Add the new item to the cart
+        cart.push(itemName);
+        // Save the updated cart back to session storage
+        sessionStorage.setItem('abc_cart', JSON.stringify(cart));
+
+        alert(itemName + ' has been added to your cart.');
+
+        }
+       </script>
     </body>
 </html>
